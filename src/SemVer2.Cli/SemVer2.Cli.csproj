@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net9.0;net8.0;</TargetFrameworks>
+    <ToolCommandName>dotnet-semver</ToolCommandName>
+    <PackAsTool>true</PackAsTool>
+    <IsPackable>true</IsPackable>
+
+    <LangVersion>13</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet Packaging -->
+    <PackageId>SemVer2.Cli</PackageId>
+    <Description>Semantic Versioning 2.0 command-line utility</Description>
+    <PackageTags>semver</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ConsoleAppFramework" Version="5.4.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SemVer2\SemVer2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="README.md"/>
+    <EmbeddedResource Include="..\..\LICENSE" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/sandbox/">
+    <Project Path="sandbox/Benchmark/Benchmark.csproj" />
+    <Project Path="sandbox/ConsoleApp1/ConsoleApp1.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/SemVer2.SystemTextJson/SemVer2.SystemTextJson.csproj" />
+    <Project Path="src/SemVer2.Cli/SemVer2.Cli.csproj" />
+    <Project Path="src/SemVer2.MessagePack/SemVer2.MessagePack.csproj" />
+    <Project Path="src/SemVer2/SemVer2.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SemVer2.Tests/SemVer2.Tests.csproj" />
+  </Folder>
+</Solution>

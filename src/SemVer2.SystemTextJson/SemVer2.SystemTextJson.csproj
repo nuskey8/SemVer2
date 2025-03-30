@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <DefineConstants>SEMVER2_SYSTEMTEXTJSON</DefineConstants>
+    <LangVersion>13</LangVersion>
+
+    <!-- NuGet -->
+    <PackageId>SemVer2.SystemTextJson</PackageId>
+    <Description>SemVer2 System.Text.Json Converter</Description>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SemVer2\SemVerJsonConverter.cs" Link="SemVerJsonConverter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="README.md" />
+    <EmbeddedResource Include="..\..\LICENSE" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SemVer2\SemVer2.csproj" />
+  </ItemGroup>
+
+</Project>
