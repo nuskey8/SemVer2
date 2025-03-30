@@ -1,6 +1,10 @@
 # SemVer2
  Fast C# Implementation of Semantic Versioning 2.0 for .NET
 
+[![NuGet](https://img.shields.io/nuget/v/SemVer2.svg)](https://www.nuget.org/packages/SemVer2)
+[![Releases](https://img.shields.io/github/release/nuskey8/SemVer2.svg)](https://github.com/nuskey8/SemVer2/releases)
+[![license](https://img.shields.io/badge/LICENSE-MIT-green.svg)](LICENSE)
+
 [English]((./README.md)) | 日本語
 
 ## 概要
